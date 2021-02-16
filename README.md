@@ -4,7 +4,7 @@ A YouTube clone front-end development project
 
 Designed and mocked up in Figma:
 
-(/images/MyTube-Design.png)
+![Alt Text](/images/MyTube-Design.png)
 
 Link to figma: https://www.figma.com/file/L7nsUKpDiYdv8NxWSnWiuS/MyTube.com?node-id=0%3A1
 
