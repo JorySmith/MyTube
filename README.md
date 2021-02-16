@@ -2,7 +2,9 @@
 
 A YouTube clone front-end development project
 
-Designed and mocked up in Figma:
+Designed and mocked up in Figma
+
+![Alt Text](/images/MyTube-Design.png)
 https://www.figma.com/file/L7nsUKpDiYdv8NxWSnWiuS/MyTube.com?node-id=0%3A1
 
 UI design principles applied:
