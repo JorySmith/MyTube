@@ -44,7 +44,7 @@ header {
 }
 
 .logo-icon img {
-  padding: 0 .25rem 0 0;
+  padding: 0 .5rem 0 0;
   height: 2rem;   
 }
 
@@ -76,7 +76,7 @@ header {
 }
 
 .search-box input[type=text] {
-  background-color: rgba(121, 120, 120, 0%);
+  background-color: var(--clr-videos-bg);
   border: 0;
   padding: .45rem .7rem;
   font-size: 1rem;
@@ -87,8 +87,7 @@ header {
   background-position: 98%;
   background-repeat: no-repeat;
   background-size: 1.4rem;   */
-  color: var(--fc-primary);
-  
+  color: var(--fc-primary);  
 }
 
 .search-icon {
@@ -116,45 +115,12 @@ header {
 
 .notification-icon,
 .user-initials-icon {
-  padding: 0 0 0 .25rem;
+  padding: 0 .5rem 0 .25rem;
 }
 
 .notification-icon img,
 .user-initials-icon img {
   height: 2rem;
-}
-
-.videos-area {
-  background-color: var(--clr-videos-bg);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
-  justify-content: center;
-  column-gap: .75rem;
-  row-gap: .50rem;
-  padding: .50rem 0;   
-}
-
-.video-card {
-  display: flex;
-  flex-direction: column;   
-  margin: auto;
-}
-
-.video-card-image img {
-  align-self: center;
-  width: 100%;
-  border-radius: 5px;  
-}
-
-.video-info {
-  display: flex;
-  justify-content: space-between;
-  line-height: 1.2rem;  
-}
-
-.video-info img {
-  border-radius: 25px;
-  padding-top: .2rem;
 }
 
 .subscription-area {
@@ -204,17 +170,60 @@ header {
   margin-top: .5rem;
 }
 
+.videos-area {
+  background-color: var(--clr-videos-bg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+  column-gap: .75rem;
+  row-gap: .5rem;
+  padding: .5rem .5rem;   
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;   
+  margin: auto;
+}
+
+.video-card-image img {
+  align-self: center;
+  width: 100%;
+  border-radius: 5px;  
+}
+
+.video-info {
+  background-color: var(--clr-videos-bg);
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2rem;  
+}
+
+.video-info img {
+  border-radius: 25px;
+  padding-top: .2rem;
+}
+
 .copyright {
   padding: 1rem 0;
   line-height: 1.4rem;
   text-align: center;
 }
 
+@media (min-width: 900px) {
+  .page-wrapper {
+    display: flex;
+  
+  }
+  .subscription-area {
+    flex: 1;
+  }
+  .videos-area {
+    flex: 4;
+  }
+}
 
-
-
-
-
+/* keep for now: */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--fc-primary);
   opacity: 1; /* Firefox */
@@ -233,3 +242,6 @@ header {
   font-family: var(--ff-primary);
   font-size: 1.15rem;
 } 
+
+
+
