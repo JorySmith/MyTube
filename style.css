@@ -82,11 +82,7 @@ header {
   font-size: 1rem;
   width: 100%;
   border: 1px solid #3D3D3D;
-  border-radius: 4px;
-  /* background-image: url('./images/magnify-glass.png');
-  background-position: 98%;
-  background-repeat: no-repeat;
-  background-size: 1.4rem;   */
+  border-radius: 4px;  
   color: var(--fc-primary);  
 }
 
@@ -146,22 +142,27 @@ header {
   padding-left: .885rem;
 }
 
-
 .subscriptions img, 
 .subscription .creator-pic {
   border-radius: 25px;
+}
+
+.hidden {
+  display: none;
 }
 
 .subscription p {
   padding-left: .7rem;
 }
 
-.down-arrow img {
+.down-arrow img,
+.up-arrow img {
   padding-left: .885rem;
   padding-right: .7rem;
 }
 
-.down-arrow p {
+.down-arrow p,
+.up-arrow p {
   padding-left: .885rem;
 }
 
